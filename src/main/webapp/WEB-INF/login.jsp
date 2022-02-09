@@ -14,17 +14,18 @@
     <body>
         <h1>Login</h1>
         
-        <form>
+        <form action="login" method="post">
             <p>
                 <label for="username">Username: </label>
-                <input type="text" name="username" id="username">
+                <input type="text" name="username" id="username" required>
             </p>
             <p>
                 <label for="password">Password: </label>
-                <input type="text" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </p>
             <button type="submit">Login</button>
-                
         </form>
+        
+        <p>${message}</p>
     </body>
 </html>
